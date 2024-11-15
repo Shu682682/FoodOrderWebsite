@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero position-relative" style="background: url('{{ MEDIA_URL }}hero-image.jpg') no-repeat center center/cover; height: 60vh;">
+    {% comment %} <div class="container h-100 d-flex flex-column justify-content-center align-items-center text-center text-white">
+        <h1 class="display-3 fw-light mb-3">Welcome to Sophia's</h1>
+        <p class="lead">A cozy place to enjoy good food and great company.</p>
+        <a href="#about" class="btn btn-lg btn-light mt-4 shadow-sm">Discover More</a>
+    </div> {% endcomment %}
+</section>
+
+<!-- About Section -->
+<div id="about" class="container my-5">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <img src="{{ MEDIA_URL }}restaurant.jpg" alt="About Us" class="img-fluid rounded shadow-sm">
+        </div>
+        <div class="col-md-6">
+            <h1 class="display-5 fw-bold mb-4 text-secondary">About Us</h1>
+            <p class="lead text-muted">
+                At <span class="fw-bold">Sophia's Restaurant</span>, we believe in creating a space where you can relax, unwind, and savor delicious meals. Our chefs craft every dish with care, using only the freshest ingredients.
+            </p>
+            <p class="text-muted">
+                Whether you're catching up with friends or celebrating life’s special moments, we’re here to make every visit feel like home.
+            </p>
+            <a href="#menu" class="btn btn-outline-secondary mt-3">View Our Menu</a>
+        </div>
+    </div>
+</div>
+
+<!-- Why Choose Us Section -->
+<section class="py-5" style="background-color: #fdfdfd;">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-4 text-secondary">Why You'll Love Us</h2>
+        <div class="row text-center">
+            <div class="col-md-4">
+                {% comment %} <img src="{{ MEDIA_URL }}fresh-ingredients.jpg" class="img-fluid mb-3 rounded-circle shadow-sm" alt="Fresh Ingredients" style="width: 90px; height: 90px;"> {% endcomment %}
+                <h5 class="fw-bold text-muted">Fresh Ingredients</h5>
+                <p class="text-muted">Enjoy dishes made from the freshest, locally-sourced produce.</p>
+            </div>
+            <div class="col-md-4">
+                {% comment %} <img src="{{ MEDIA_URL }}cozy-atmosphere.jpg" class="img-fluid mb-3 rounded-circle shadow-sm" alt="Cozy Atmosphere" style="width: 90px; height: 90px;"> {% endcomment %}
+                <h5 class="fw-bold text-muted">Cozy Atmosphere</h5>
+                <p class="text-muted">A comfortable setting to unwind and enjoy quality time.</p>
+            </div>
+            <div class="col-md-4">
+                {% comment %} <img src="{{ MEDIA_URL }}friendly-staff.jpg" class="img-fluid mb-3 rounded-circle shadow-sm" alt="Friendly Staff" style="width: 90px; height: 90px;"> {% endcomment %}
+                <h5 class="fw-bold text-muted">Friendly Staff</h5>
+                <p class="text-muted">Our team is here to make your experience memorable and enjoyable.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}
